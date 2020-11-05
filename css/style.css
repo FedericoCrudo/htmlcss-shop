@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background-color: grey;
+  margin: 50px;
+}
+.top{
+  border-bottom: 5px solid yellow;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.top> h1{
+  text-align: center;
+  font-style: oblique;
+  margin-top: 5px;
+  padding:5px;
+  border-bottom: 5px solid yellow;
+}
+.top>p{
+  font-style: oblique;
+  font-size: 25px;
+  color: white;
+}
+.top>img{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 76%;
+  margin: auto;
+}
+.catalogo{
+  background-color: white;
+  text-align: center;
+  width: 76%;
+  margin: auto;
+  border: 3px solid black;
+}
+.row{
+  margin-top: 20px;
+  text-align: center;
+}
+.prodotto{
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+}
+.prodotto>#sconto{
+  position: absolute;
+  background-color: green;
+  border: 2px solid black;
+  top: 0;
+  right: 0;
+}
+.prodotto>#sconto:nth-child(even){
+  background-color: red; 
+}
+#heart{
+    position: absolute;
+    color: red;
+    font-size: 40px;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.prodotto:hover #heart{
+  display:block;
+}
+.prodotto:hover{
+  cursor: pointer;
+}
